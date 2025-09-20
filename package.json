@@ -20,8 +20,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc -b",
-    "clean": "rm -rf **/dist"
+    "build": "tsc -b --force",
+    "clean": "find . -name 'dist' -type d -exec rm -rf {} +"
   },
   "repository": {
     "type": "git",
