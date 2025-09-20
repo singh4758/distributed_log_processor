@@ -1,0 +1,23 @@
+# Docker Compose configuration for the distributed_log_processor project.
+# 
+# Version: 3.8
+#
+# Services:
+#   logger:
+#     - Builds the logger service from the Dockerfile located at ./src/services/logger.
+#     - Mounts the local directory ./src/services/logger to /app inside the container for live code updates.
+#     - Exposes port 8000 on the host and maps it to port 8000 in the container.
+#     - Sets the environment variable LOG_LEVEL to "info" for configuring log verbosity.
+version: '3.8'
+
+services:
+  logger:
+    build:
+      context: .
+      dockerfile: ./src/services/logger/Dockerfile
+    volumes:
+      - ./logs:/logs
+    ports:
+      - "8000:8000"
+    environment:
+      - LOG_LEVEL=info

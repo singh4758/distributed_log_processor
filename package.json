@@ -1,0 +1,38 @@
+{
+  "name": "distributed_log_processor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This project is part of the my trainging to learn Node Js in deep.",
+  "workspaces": [
+    "src/services/*",
+    "libs/*"
+  ],
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "dependencies": {
+    "undici-types": "^7.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b",
+    "clean": "rm -rf **/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/singh4758/distributed_log_processor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/singh4758/distributed_log_processor/issues"
+  },
+  "homepage": "https://github.com/singh4758/distributed_log_processor#readme"
+}

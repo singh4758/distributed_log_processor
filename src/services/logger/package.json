@@ -1,0 +1,19 @@
+{
+  "name": "@myorg/logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+  "build": "rm -rf dist && tsc -b && tsc-alias -p tsconfig.json",
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "tsc-alias": "^1.8.8",
+    "@myorg/common-utils": "^1.0.0"
+  }
+}
